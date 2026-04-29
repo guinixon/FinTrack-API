@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #020024;
+background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgba(110, 74, 20, 1) 35%, rgba(232, 232, 232, 1) 100%);
+}
+
+.app{
+    max-width: 600px;
+    margin: auto;
+    padding: 15%;
+}
+
+.topo{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.topo h1{
+    text-align: left;
+    margin: 10px;
+}
+
+.topo h2{
+    text-align: left;
+    margin: 10px;
+}
+
+.topo p{
+    text-align: center;
+    margin: 2%;
+}
+
+.saldo-card{
+    background: #824c00;
+background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    padding: 17px;
+    border-radius: 20px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.saldo-card h2{
+    margin: 0;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+
+.saldo-card p{
+    font-size:25px;
+    font-weight:bolder; 
+}
+
+.movimentacao{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex:1;
+    min-width: 140px;
+    padding:5px;
+    border-radius: 20px;
+}
+
+.entradas{
+    background: #023B0A;
+
+}
+
+.saidas{
+    background: #4D0000;
+}
+
+.entradas p{
+    font-size: 23px;
+    font-weight:bolder;
+}
+
+.saidas p{
+    font-size: 23px;
+    font-weight:bolder;
+}
+
+.nova-transacao{
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+input
+{
+    width: 90%;
+    padding: 3px;
+    margin-top: 2px;
+    border:black;
+    border-radius: 6px;
+    background: #ffffff;
+background: linear-gradient(9deg, rgba(255, 255, 255, 1) 0%, rgba(176, 176, 176, 1) 27%, rgba(107, 104, 104, 1) 100%);
+    color: black;
+}
+
+select{
+    width: 20%;
+    padding: 3px;
+    margin-top: 2px;
+    border:black;
+    border-radius: 6px;
+    background: #ffffff;
+background: linear-gradient(9deg, rgba(255, 255, 255, 1) 0%, rgba(176, 176, 176, 1) 27%, rgba(107, 104, 104, 1) 100%);
+    color: black;
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 3px;
+    border: black;
+    border-radius: 6px;
+    background: #824c00;
+    background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    font-weight: bolder;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1); 
+}
+
+.transacoes{
+    background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+ul{
+    list-style-type:none;
+    padding: 2px;
+    margin: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+li.entrada{
+    border-left: 5px solid #023B0A;
+}
+
+li.saida{
+    border-left: 5px solid #4D0000;
+}
+
+@media (min-width: 600px){
+.app{
+    max-width: 600px;
+}
+
+.saldo-card p{
+    font-size: 36px;
+}
+}
+
+@media (min-width: 900px){
+.app{
+    max-width: 900px;
+}
+
+.movimentacao{
+    gap: 20px;
+}
+
+.card{
+    padding: 20px;
+}
+li{
+    font-size: 16px;
+}
+}
