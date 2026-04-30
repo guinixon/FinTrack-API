@@ -1,4 +1,5 @@
 body{
+    color: white;
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
     background: #020024;
@@ -41,6 +42,7 @@ background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100
 }
 
 .saldo-card h2{
+    color: #fff;
     margin: 0;
     font-size: 25px;
     text-align: left;
@@ -49,6 +51,7 @@ background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100
 
 
 .saldo-card p{
+    color: white;
     font-size:25px;
     font-weight:bolder; 
 }
@@ -68,11 +71,13 @@ background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100
 }
 
 .entradas{
+    color: #fff;
     background: #023B0A;
 
 }
 
 .saidas{
+    color: #fff;
     background: #4D0000;
 }
 
@@ -86,7 +91,16 @@ background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100
     font-weight:bolder;
 }
 
+.layout{
+    align-items: center;
+    background:#824c00;
+    border: #824c00;
+    color: #fff;
+    border-radius: 12px;
+}
+
 .nova-transacao{
+    align-items: center;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
@@ -94,8 +108,9 @@ background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100
 
 input
 {
+    align-items: center;
     width: 90%;
-    padding: 3px;
+    padding: 5px;
     margin-top: 2px;
     border:black;
     border-radius: 6px;
@@ -105,7 +120,8 @@ background: linear-gradient(9deg, rgba(255, 255, 255, 1) 0%, rgba(176, 176, 176,
 }
 
 select{
-    width: 20%;
+    align-items: center;
+    width: 91%;
     padding: 3px;
     margin-top: 2px;
     border:black;
@@ -116,20 +132,21 @@ background: linear-gradient(9deg, rgba(255, 255, 255, 1) 0%, rgba(176, 176, 176,
 }
 
 button{
-    margin-top: 15px;
+    margin-top: 50px;
     width: 100%;
-    padding: 3px;
+    padding: 13px;
     border: black;
     border-radius: 6px;
+    color: #fff;
     background: #824c00;
-    background: linear-gradient(90deg, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(130, 76, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
     font-weight: bolder;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 button:hover{
-    transform: scale(1.1); 
+    transform: scale(1.06); 
 }
 
 .transacoes{
@@ -150,17 +167,19 @@ li{
     align-items: center;
     padding: 12px;
     margin-top: 10px;
-    background: white;
+    color: #000;
+    background: #ffffff;
+background: linear-gradient(9deg, rgba(255, 255, 255, 1) 0%, rgba(176, 176, 176, 1) 27%, rgba(107, 104, 104, 1) 100%);
     border-radius: 3px;
     font-size: 10px;
 }
 
 li.entrada{
-    border-left: 5px solid #023B0A;
+    border-left: 15px solid #023B0A;
 }
 
 li.saida{
-    border-left: 5px solid #4D0000;
+    border-left: 15px solid #4D0000;
 }
 
 @media (min-width: 600px){

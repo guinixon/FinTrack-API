@@ -5,5 +5,5 @@ class Transacao(BaseModel):
     id: int
     descricao: str
     valor: float
-    tipo: Literal["entrada", "saida'"]
+    tipo: Literal["entrada", "saida"]
     categoria: str
