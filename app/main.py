@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from app.routes.financeiro_routes import router as financeiro_router
 from fastapi.middleware.cors import CORSMiddleware
 
+# uvicorn app.main:app --reload
+
 app = FastAPI(title="API Controle Financeiro")
 
 #liberar o cors para tetes e desenvolvimento
